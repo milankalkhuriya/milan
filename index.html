@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Love Proposal</title>
+    <style>
+        /* Body and page layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/1a/e8/8f/1ae88f0c5d4ac8640787d429ba2e34ec.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Page Container */
+        .page {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        /* First page */
+        .page-one {
+            display: flex;
+        }
+
+        .scimg {
+            height: 800px;
+            width: 600px;
+            padding-bottom: 10px;
+        }
+
+        .img2 {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Proposal Section */
+        .page-two {
+            display: none;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Page title and Text */
+        .heading {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .line-text {
+            font-size: 1.5em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        /* Button Style */
+        .button {
+            padding: 15px 30px;
+            margin-top: 30px;
+            background-color: #ff4b6e;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff2a46;
+        }
+
+        /* Footer */
+        footer {
+            /* background-color: #ff4b6e; */
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <!-- First Page -->
+        <div class="page page-one" id="page-one">
+            <div class="heading">A Love Like No Other</div>
+            <div class="img2">
+                <img class="scimg" src="download-removebg-preview.png" alt="Romantic illustration">
+            </div>
+            <a href="#" class="button" onclick="showPageTwo()">Next</a>
+        </div>
+    </section>
+
+    <!-- Second Page with Proposal -->
+    <div class="page page-two" id="page-two">
+        <div class="heading">To My Favorite Person</div>
+        <div class="line-text">
+            Hello Mr Boyfriend!!💕😁
+
+                
+                
+        </div>
+        <div class="line-text">
+            <p>I don’t know if you’ll like this or not, but I want to express my feelings in a way that feels right. Recently, I’ve learned some new skills, and I wanted to create something meaningful for you. You know I’m not very good at expressing my emotions directly, but when I write them down, I feel I can explain myself much better.
+                
+                So here it is—I just want to say that the time I’ve spent talking to you so far has been very much special to me. And honestly, you’ve become someone very special to me as well. I don’t know why, but as I was working on this, I felt so happy, and I genuinely enjoyed every moment of it.
+                
+                I hope through this, you can understand how much I care about you and how much I enjoy spending time with you. Out of everything, what I love the most is teasing you—it just makes me feel so happy.
+                
+                In the end, all I really want to say is…
+                I love you. 💕</p>
+            
+        </div>
+        <div class="line-text">
+            I want to spend every moment with you, creating memories together....
+            With all my love, I ask you this question: Will you be my boyfriend....😁?
+        </div>
+        <a href="#" class="button" onclick="confirmProposal()">Say Yes</a>
+    </div>
+
+
+    <script>
+        // Function to show the second page when the "Next" button is clicked
+        function showPageTwo() {
+            // Hide first page and show second page
+            document.getElementById("page-one").style.display = "none";
+            document.getElementById("page-two").style.display = "flex";
+        }
+
+        // Function to handle the proposal confirmation
+        function confirmProposal() {
+            const response = confirm("Do you love me?");
+            if (response) {
+                alert("You just made me the happiest person ever! ❤️");
+            } else {
+                alert("I will always love you, no matter what. ❤️");
+            }
+        }
+    </script>
+</body>
+</html>
